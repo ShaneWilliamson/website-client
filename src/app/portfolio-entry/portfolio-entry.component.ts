@@ -7,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioEntryComponent implements OnInit {
 
-  private string header;
-  private string body;
-
   constructor() { }
 
   ngOnInit() {
