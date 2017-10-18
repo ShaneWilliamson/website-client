@@ -8,11 +8,13 @@ import { MatButtonModule, MatCardModule, MatListModule, MatSidenavModule } from 
 import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
   { path: 'about', component: HomeComponent },
   { path: 'portfolio', component: PortfolioComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '**', component: AppComponent }
 ]
 
@@ -21,6 +23,7 @@ const appRoutes: Routes = [
     AppComponent,
     PortfolioComponent,
     HomeComponent,
+    ContactComponent,
   ],
   imports: [
     RouterModule.forRoot(
