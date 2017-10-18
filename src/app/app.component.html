@@ -1,9 +1,9 @@
 <mat-sidenav-container>
   <mat-card class="mat-elevation-z6 nav">
     <mat-card-content>
-      <a mat-button="mat-button">About</a>
-      <a mat-button="mat-button">Portfolio</a>
-      <a mat-button="mat-button">Contact</a>
+      <a mat-button="mat-button" [routerLink]="['about']">About</a>
+      <a mat-button="mat-button" [routerLink]="['portfolio']">Portfolio</a>
+      <a mat-button="mat-button" [routerLink]="['contact']">Contact</a>
       <a mat-button="mat-button" href="http://foobarbaz.ca/">Blog</a>
     </mat-card-content>
   </mat-card>

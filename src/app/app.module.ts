@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import { RouterModule, RouterOutlet, Routes } from '@angular/router';
+import { RouterLink, RouterModule, RouterOutlet, Routes } from '@angular/router';
 import { MatButtonModule, MatCardModule, MatGridListModule, MatSidenavModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -20,7 +20,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     PortfolioComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     RouterModule.forRoot(
