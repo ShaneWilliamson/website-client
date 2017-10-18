@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { RouterLink, RouterModule, RouterOutlet, Routes } from '@angular/router';
-import { MatButtonModule, MatCardModule, MatGridListModule, MatSidenavModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatListModule, MatSidenavModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -31,7 +31,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
-    MatGridListModule,
+    MatListModule,
     MatSidenavModule,
   ],
   providers: [
