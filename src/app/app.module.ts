@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { BannerComponent } from './banner/banner.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
@@ -24,6 +25,7 @@ const appRoutes: Routes = [
     PortfolioComponent,
     HomeComponent,
     ContactComponent,
+    BannerComponent,
   ],
   imports: [
     RouterModule.forRoot(
