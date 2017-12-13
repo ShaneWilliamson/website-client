@@ -1,10 +1,16 @@
 <mat-sidenav-container>
   <mat-card class="mat-elevation-z6 nav">
-    <mat-card-content>
-      <a mat-button="mat-button" [routerLink]="['about']">About</a>
-      <a mat-button="mat-button" [routerLink]="['portfolio']">Portfolio</a>
-      <a mat-button="mat-button" [routerLink]="['contact']">Contact</a>
-      <a mat-button="mat-button" href="http://foobarbaz.ca/">Blog</a>
+    <mat-card-content class="nav-content">
+      <div class="nav-buttons">
+        <a mat-button="mat-button" [routerLink]="['about']">About</a>
+        <a mat-button="mat-button" [routerLink]="['portfolio']">Portfolio</a>
+        <a mat-button="mat-button" [routerLink]="['contact']">Contact</a>
+        <a mat-button="mat-button" href="http://foobarbaz.ca/">Blog</a>
+      </div>
+      <div class="spacer"></div>
+      <div class="mark-wrapper">
+          <a mat-icon-button href="https://github.com/ShaneWilliamson/website-client"><img class="nav-github-mark" src="assets/GitHub-Mark-64px.png"></a>
+      </div>
     </mat-card-content>
   </mat-card>
 
