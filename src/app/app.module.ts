@@ -1,47 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import { RouterLink, RouterModule, RouterOutlet, Routes } from '@angular/router';
-import { MatButtonModule, MatCardModule, MatListModule, MatSidenavModule } from '@angular/material';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
-import { BannerComponent } from './banner/banner.component';
-
-const appRoutes: Routes = [
-  { path: '', redirectTo: 'about', pathMatch: 'full' },
-  { path: 'about', component: HomeComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: '**', component: AppComponent }
-]
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PortfolioComponent,
-    HomeComponent,
-    ContactComponent,
-    BannerComponent,
+    AppComponent
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    ),
     BrowserModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatCardModule,
-    MatListModule,
-    MatSidenavModule,
+    AppRoutingModule
   ],
-  providers: [
-    {provide: LocationStrategy, useClass: HashLocationStrategy},
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
